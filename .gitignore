@@ -1,0 +1,7 @@
+*.DS_Store
+*xcuserdata*
+*Frameworks*
+.idea
+.bak
+/Pods*
+Podfile.lock
