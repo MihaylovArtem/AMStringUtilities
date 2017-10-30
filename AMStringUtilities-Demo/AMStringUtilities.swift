@@ -1,5 +1,5 @@
 //
-//  String+Utilities.swift
+//  AMStringUtilities.swift
 //  StringUtilities
 //
 //  Created by Artem Mihaylov on 26.10.2017.

@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		AD38FFB51FA447C700F7D342 /* PhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVC.swift; sourceTree = "<group>"; };
-		ADA36EF51FA1E43D0063F974 /* StringUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA36EF51FA1E43D0063F974 /* AMStringUtilities-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMStringUtilities-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA36EF81FA1E43D0063F974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA36EFD1FA1E43D0063F974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		ADA36EEC1FA1E43D0063F974 = {
 			isa = PBXGroup;
 			children = (
-				ADA36EF71FA1E43D0063F974 /* StringUtilities */,
+				ADA36EF71FA1E43D0063F974 /* AMStringUtilities-Demo */,
 				ADA36EF61FA1E43D0063F974 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,12 +60,12 @@
 		ADA36EF61FA1E43D0063F974 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADA36EF51FA1E43D0063F974 /* StringUtilities.app */,
+				ADA36EF51FA1E43D0063F974 /* AMStringUtilities-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADA36EF71FA1E43D0063F974 /* StringUtilities */ = {
+		ADA36EF71FA1E43D0063F974 /* AMStringUtilities-Demo */ = {
 			isa = PBXGroup;
 			children = (
 				011B668A1FA70DC6004844CD /* Controllers */,
@@ -75,15 +75,15 @@
 				ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */,
 				ADA36F041FA1E43D0063F974 /* Info.plist */,
 			);
-			path = StringUtilities;
+			path = "AMStringUtilities-Demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADA36EF41FA1E43D0063F974 /* StringUtilities */ = {
+		ADA36EF41FA1E43D0063F974 /* AMStringUtilities-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADA36F071FA1E43D0063F974 /* Build configuration list for PBXNativeTarget "StringUtilities" */;
+			buildConfigurationList = ADA36F071FA1E43D0063F974 /* Build configuration list for PBXNativeTarget "AMStringUtilities-Demo" */;
 			buildPhases = (
 				ADA36EF11FA1E43D0063F974 /* Sources */,
 				ADA36EF21FA1E43D0063F974 /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = StringUtilities;
+			name = "AMStringUtilities-Demo";
 			productName = StringExt;
-			productReference = ADA36EF51FA1E43D0063F974 /* StringUtilities.app */;
+			productReference = ADA36EF51FA1E43D0063F974 /* AMStringUtilities-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADA36EF01FA1E43D0063F974 /* Build configuration list for PBXProject "StringUtilities" */;
+			buildConfigurationList = ADA36EF01FA1E43D0063F974 /* Build configuration list for PBXProject "AMStringUtilities-Demo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADA36EF41FA1E43D0063F974 /* StringUtilities */,
+				ADA36EF41FA1E43D0063F974 /* AMStringUtilities-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -284,9 +284,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WX64768YS;
-				INFOPLIST_FILE = StringUtilities/Info.plist;
+				INFOPLIST_FILE = "AMStringUtilities-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = AM.StringUtilities;
+				PRODUCT_BUNDLE_IDENTIFIER = "AM.AMStringUtilities-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,9 +299,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WX64768YS;
-				INFOPLIST_FILE = StringUtilities/Info.plist;
+				INFOPLIST_FILE = "AMStringUtilities-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = AM.StringUtilities;
+				PRODUCT_BUNDLE_IDENTIFIER = "AM.AMStringUtilities-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADA36EF01FA1E43D0063F974 /* Build configuration list for PBXProject "StringUtilities" */ = {
+		ADA36EF01FA1E43D0063F974 /* Build configuration list for PBXProject "AMStringUtilities-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADA36F051FA1E43D0063F974 /* Debug */,
@@ -320,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADA36F071FA1E43D0063F974 /* Build configuration list for PBXNativeTarget "StringUtilities" */ = {
+		ADA36F071FA1E43D0063F974 /* Build configuration list for PBXNativeTarget "AMStringUtilities-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADA36F081FA1E43D0063F974 /* Debug */,
