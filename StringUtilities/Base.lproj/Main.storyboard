@@ -22,6 +22,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="formatTFTextChanged:" destination="w2v-ba-edm" eventType="editingChanged" id="9M1-sb-ujK"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSX-IK-Mtv">
                                 <rect key="frame" x="93.5" y="25" width="133.5" height="27.5"/>
@@ -46,8 +49,12 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textToFormatChanged:" destination="w2v-ba-edm" eventType="valueChanged" id="e5c-DC-EQw"/>
+                                    <action selector="textToFormatChanged:" destination="w2v-ba-edm" eventType="editingChanged" id="jsx-zX-92h"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+7 (123) 456-78-90" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y8C-lw-6CZ">
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+7 (123) 456-78-90" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y8C-lw-6CZ">
                                 <rect key="frame" x="20" y="330" width="280.5" height="32"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -194,63 +201,89 @@
         <!--Date-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StringUtilities" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DateVC" customModule="StringUtilities" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQB-Tg-hEe">
-                                <rect key="frame" x="37" y="61" width="301" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-dI-a9h">
-                                <rect key="frame" x="37" y="135" width="301" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhg-89-G6i">
-                                <rect key="frame" x="160" y="32" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone to check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZT-iW-Hih">
-                                <rect key="frame" x="128" y="106" width="119" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIK-hJ-IOn">
-                                <rect key="frame" x="165" y="192" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Check"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vvt-Je-po8">
+                                <rect key="frame" x="0.0" y="10" width="320" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="0KI-wy-6mS"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="531039724.83719403">
+                                    <!--2017-10-30 07:02:04 +0000-->
+                                </date>
                                 <connections>
-                                    <action selector="checkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldc-Pf-Syb"/>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="B7j-xp-D38"/>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Wtf-i9-eBC"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usm-4z-0p2">
-                                <rect key="frame" x="21" y="264" width="332" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd.MM.yyyy HH:mm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O53-IC-ZO0">
+                                <rect key="frame" x="20" y="287.5" width="280" height="32"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="formatChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="rua-3j-vsb"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-o3-qcA">
+                                <rect key="frame" x="101.5" y="250" width="117" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd.MM.yyyy HH:mm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJl-r7-ats">
+                                <rect key="frame" x="20" y="388" width="280" height="32"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dateTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="SCa-6R-E2e"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formatted date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTv-D6-71D">
+                                <rect key="frame" x="84" y="350" width="152" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vd-1c-z0g">
+                                <rect key="frame" x="68.5" y="445" width="183.5" height="55"/>
+                                <string key="text">Check date format
+or entering date</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eM8-o3-qcA" firstAttribute="top" secondItem="Vvt-Je-po8" secondAttribute="bottom" constant="24" id="0E2-yX-zqm"/>
+                            <constraint firstItem="lTv-D6-71D" firstAttribute="top" secondItem="O53-IC-ZO0" secondAttribute="bottom" constant="30.5" id="4eY-LO-mn5"/>
+                            <constraint firstItem="Vvt-Je-po8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="7Ft-s0-9RS"/>
+                            <constraint firstItem="0vd-1c-z0g" firstAttribute="top" secondItem="NJl-r7-ats" secondAttribute="bottom" constant="25" id="DXT-oa-2xa"/>
+                            <constraint firstItem="0vd-1c-z0g" firstAttribute="centerX" secondItem="NJl-r7-ats" secondAttribute="centerX" id="MaP-St-pLt"/>
+                            <constraint firstItem="NJl-r7-ats" firstAttribute="centerX" secondItem="lTv-D6-71D" secondAttribute="centerX" id="SBR-QB-Dap"/>
+                            <constraint firstItem="O53-IC-ZO0" firstAttribute="centerX" secondItem="eM8-o3-qcA" secondAttribute="centerX" id="UtA-ak-AdH"/>
+                            <constraint firstItem="O53-IC-ZO0" firstAttribute="top" secondItem="eM8-o3-qcA" secondAttribute="bottom" constant="10" id="YXu-mY-AoB"/>
+                            <constraint firstItem="lTv-D6-71D" firstAttribute="centerX" secondItem="O53-IC-ZO0" secondAttribute="centerX" id="Yi7-eh-LAU"/>
+                            <constraint firstItem="Vvt-Je-po8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b4q-Mw-s6W"/>
+                            <constraint firstItem="NJl-r7-ats" firstAttribute="top" secondItem="lTv-D6-71D" secondAttribute="bottom" constant="10" id="bV5-Ng-RUB"/>
+                            <constraint firstItem="eM8-o3-qcA" firstAttribute="centerX" secondItem="Vvt-Je-po8" secondAttribute="centerX" id="fl0-lt-1lD"/>
+                            <constraint firstItem="NJl-r7-ats" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hSX-E1-86A"/>
+                            <constraint firstItem="O53-IC-ZO0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hbN-cD-Gt4"/>
+                            <constraint firstItem="Vvt-Je-po8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u1t-PY-8qJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" id="lKb-da-tx9"/>
                     <connections>
-                        <outlet property="formatTextField" destination="nQB-Tg-hEe" id="1lx-eE-ryz"/>
-                        <outlet property="phoneTextField" destination="5qj-dI-a9h" id="3NH-n2-h7P"/>
-                        <outlet property="resultLabel" destination="Usm-4z-0p2" id="J9g-YH-yOw"/>
+                        <outlet property="dateFormat" destination="O53-IC-ZO0" id="YQ8-Ev-cS1"/>
+                        <outlet property="datePicker" destination="Vvt-Je-po8" id="HQG-zD-WfM"/>
+                        <outlet property="dateTF" destination="NJl-r7-ats" id="vBy-Zj-O36"/>
+                        <outlet property="warningLabel" destination="0vd-1c-z0g" id="cgx-V9-BLE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

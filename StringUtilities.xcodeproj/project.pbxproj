@@ -13,6 +13,7 @@
 		ADA36F001FA1E43D0063F974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */; };
 		ADA36F0B1FA1E4720063F974 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */; };
 		ADA36F0D1FA4412B0063F974 /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA36F0C1FA4412B0063F974 /* EmailVC.swift */; };
+		ADBE1DA01FA706C100EA7182 /* DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE1D9F1FA706C100EA7182 /* DateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ADA36F041FA1E43D0063F974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
 		ADA36F0C1FA4412B0063F974 /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
+		ADBE1D9F1FA706C100EA7182 /* DateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */,
 				ADA36F0C1FA4412B0063F974 /* EmailVC.swift */,
 				AD38FFB51FA447C700F7D342 /* PhoneVC.swift */,
+				ADBE1D9F1FA706C100EA7182 /* DateVC.swift */,
 			);
 			path = StringUtilities;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				ADA36F0D1FA4412B0063F974 /* EmailVC.swift in Sources */,
 				ADA36F0B1FA1E4720063F974 /* String+Utilities.swift in Sources */,
+				ADBE1DA01FA706C100EA7182 /* DateVC.swift in Sources */,
 				ADA36EF91FA1E43D0063F974 /* AppDelegate.swift in Sources */,
 				AD38FFB61FA447C700F7D342 /* PhoneVC.swift in Sources */,
 			);
