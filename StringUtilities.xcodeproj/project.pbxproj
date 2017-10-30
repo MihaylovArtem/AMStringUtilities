@@ -11,7 +11,7 @@
 		ADA36EF91FA1E43D0063F974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA36EF81FA1E43D0063F974 /* AppDelegate.swift */; };
 		ADA36EFE1FA1E43D0063F974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA36EFC1FA1E43D0063F974 /* Main.storyboard */; };
 		ADA36F001FA1E43D0063F974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */; };
-		ADA36F0B1FA1E4720063F974 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */; };
+		ADA36F0B1FA1E4720063F974 /* AMStringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA36F0A1FA1E4720063F974 /* AMStringUtilities.swift */; };
 		ADA36F0D1FA4412B0063F974 /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA36F0C1FA4412B0063F974 /* EmailVC.swift */; };
 		ADBE1DA01FA706C100EA7182 /* DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE1D9F1FA706C100EA7182 /* DateVC.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +23,7 @@
 		ADA36EFD1FA1E43D0063F974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA36F041FA1E43D0063F974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+		ADA36F0A1FA1E4720063F974 /* AMStringUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMStringUtilities.swift; sourceTree = "<group>"; };
 		ADA36F0C1FA4412B0063F974 /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
 		ADBE1D9F1FA706C100EA7182 /* DateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				011B668A1FA70DC6004844CD /* Controllers */,
-				ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */,
+				ADA36F0A1FA1E4720063F974 /* AMStringUtilities.swift */,
 				ADA36EF81FA1E43D0063F974 /* AppDelegate.swift */,
 				ADA36EFC1FA1E43D0063F974 /* Main.storyboard */,
 				ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */,
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA36F0D1FA4412B0063F974 /* EmailVC.swift in Sources */,
-				ADA36F0B1FA1E4720063F974 /* String+Utilities.swift in Sources */,
+				ADA36F0B1FA1E4720063F974 /* AMStringUtilities.swift in Sources */,
 				ADBE1DA01FA706C100EA7182 /* DateVC.swift in Sources */,
 				ADA36EF91FA1E43D0063F974 /* AppDelegate.swift in Sources */,
 				AD38FFB61FA447C700F7D342 /* PhoneVC.swift in Sources */,
