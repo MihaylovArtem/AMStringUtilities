@@ -39,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011B668A1FA70DC6004844CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADA36F0C1FA4412B0063F974 /* EmailVC.swift */,
+				AD38FFB51FA447C700F7D342 /* PhoneVC.swift */,
+				ADBE1D9F1FA706C100EA7182 /* DateVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		ADA36EEC1FA1E43D0063F974 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +68,12 @@
 		ADA36EF71FA1E43D0063F974 /* StringUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				011B668A1FA70DC6004844CD /* Controllers */,
+				ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */,
 				ADA36EF81FA1E43D0063F974 /* AppDelegate.swift */,
 				ADA36EFC1FA1E43D0063F974 /* Main.storyboard */,
 				ADA36EFF1FA1E43D0063F974 /* Assets.xcassets */,
 				ADA36F041FA1E43D0063F974 /* Info.plist */,
-				ADA36F0A1FA1E4720063F974 /* String+Utilities.swift */,
-				ADA36F0C1FA4412B0063F974 /* EmailVC.swift */,
-				AD38FFB51FA447C700F7D342 /* PhoneVC.swift */,
-				ADBE1D9F1FA706C100EA7182 /* DateVC.swift */,
 			);
 			path = StringUtilities;
 			sourceTree = "<group>";

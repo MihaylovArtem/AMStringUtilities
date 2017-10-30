@@ -108,7 +108,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mOt-Fi-hN4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Phone" id="lLM-Dc-oOB"/>
+                    <tabBarItem key="tabBarItem" title="Phone" image="phone" id="lLM-Dc-oOB"/>
                     <connections>
                         <outlet property="defaultFormatL" destination="5Nu-JJ-Y41" id="3LP-lK-nDb"/>
                         <outlet property="formatTF" destination="NvO-pr-5FP" id="gu9-iK-jvQ"/>
@@ -169,7 +169,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fkF-ax-JLn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="E-mail" id="z4w-My-arN"/>
+                    <tabBarItem key="tabBarItem" title="E-mail" image="email" id="z4w-My-arN"/>
                     <connections>
                         <outlet property="emailTF" destination="bIZ-XN-sQK" id="xJv-RV-yhg"/>
                         <outlet property="resultLabel" destination="Zgq-Ms-YR0" id="J7P-Bs-MRi"/>
@@ -278,7 +278,7 @@ or entering date</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Date" id="lKb-da-tx9"/>
+                    <tabBarItem key="tabBarItem" title="Date" image="date" id="lKb-da-tx9"/>
                     <connections>
                         <outlet property="dateFormat" destination="O53-IC-ZO0" id="YQ8-Ev-cS1"/>
                         <outlet property="datePicker" destination="Vvt-Je-po8" id="HQG-zD-WfM"/>
@@ -291,4 +291,9 @@ or entering date</string>
             <point key="canvasLocation" x="-810" y="776"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="date" width="25" height="25"/>
+        <image name="email" width="25" height="25"/>
+        <image name="phone" width="25" height="25"/>
+    </resources>
 </document>

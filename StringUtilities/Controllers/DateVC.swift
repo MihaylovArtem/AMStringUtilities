@@ -2,8 +2,8 @@
 //  DateVC.swift
 //  StringUtilities
 //
-//  Created by Артем Михайлов on 30.10.2017.
-//  Copyright © 2017 Артем Михайлов. All rights reserved.
+//  Created by Artem Mihaylov on 30.10.2017.
+//  Copyright © 2017 Artem Mihaylov. All rights reserved.
 //
 
 import UIKit

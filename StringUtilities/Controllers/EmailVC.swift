@@ -1,6 +1,6 @@
 //
 //  EmailVC.swift
-//  StringExtensions
+//  StringUtilities
 //
 //  Created by Artem Mihaylov on 28.10.2017.
 //  Copyright © 2017 Artem Mihaylov. All rights reserved.
