@@ -9,7 +9,7 @@
 import Foundation
 
 
-extension String {
+public extension String {
     
     // MARK: - E-mail
     
@@ -17,7 +17,7 @@ extension String {
        Checks if string is correct e-mail
      - returns:  Correctness of e-mail in string
      */
-    func isCorrectEmail() -> Bool {
+    public func isCorrectEmail() -> Bool {
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", regex)
         return emailPredicate.evaluate(with: self)
@@ -59,7 +59,7 @@ extension String {
      Get phone string with default phone format (check default value of String.phoneFormat)
      - returns:  Phone string, which is conforms to default phone format
      */
-    func defaultFormatPhone() -> String {
+    public func defaultFormatPhone() -> String {
         return self.formatPhone(withFormat: String.defaultFormat)
     }
     
@@ -68,7 +68,7 @@ extension String {
      - Parameter format: Specified format, default is String.phoneFormat
      - returns:  Phone string, which is conforms to specified phone format
      */
-    func formatPhone(withFormat format: String = String.phoneFormat) -> String {
+    public func formatPhone(withFormat format: String = String.phoneFormat) -> String {
         let digitsSet: Set<Character> = Set(["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
         var formatIndex = 0
         var stringIndex = 0
@@ -115,7 +115,7 @@ extension String {
      - Parameter format: Specified format, default is String.dateFormat
      - returns:  String from date, which is conforms to specified format
      */
-    init(withDate date: Date, format: String = String.dateFormat) {
+    public init(withDate date: Date, format: String = String.dateFormat) {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         self = formatter.string(from: date)
@@ -127,7 +127,7 @@ extension String {
      - Parameter format: Specified format, default is String.dateFormat
      - returns:  String from date, which is conforms to default format
      */
-    init(withDefaultFormatAndDate date: Date) {
+    public init(withDefaultFormatAndDate date: Date) {
         let formatter = DateFormatter()
         formatter.dateFormat = String.defaultDateFormat
         self = formatter.string(from: date)
@@ -138,7 +138,7 @@ extension String {
      - Parameter format: Specified format, default is String.dateFormat
      - returns:  Date, if can date string is comforms to specified format, nil otherwise
      */
-    func toDate(withFormat format: String = String.dateFormat) -> Date? {
+    public func toDate(withFormat format: String = String.dateFormat) -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.date(from: self)
@@ -148,7 +148,7 @@ extension String {
      Converts string to date with default format (check default value of String.dateFormat)
      - returns:  Date, if can date string is comforms to default format, nil otherwise
      */
-    func toDateWithDefaultFormat() -> Date? {
+    public func toDateWithDefaultFormat() -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = String.defaultDateFormat
         return formatter.date(from: self)
