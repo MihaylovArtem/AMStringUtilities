@@ -14,7 +14,7 @@ class EmailVC: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func checkButtonTapped() {
-        guard let email = emailTF.text, !email.characters.isEmpty else {
+        guard let email = emailTF.text, !email.isEmpty else {
             resultLabel.text = "Enter e-mail"
             resultLabel.textColor = .red
             return

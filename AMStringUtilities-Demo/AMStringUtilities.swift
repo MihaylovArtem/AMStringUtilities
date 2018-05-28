@@ -73,11 +73,11 @@ public extension String {
         var formatIndex = 0
         var stringIndex = 0
         var resultString = ""
-        while formatIndex < format.characters.count {
+        while formatIndex < format.count {
             let formatCharacter = format[format.index(format.startIndex, offsetBy: formatIndex)]
             formatIndex += 1
             if digitsSet.contains(formatCharacter) {
-                while stringIndex < self.characters.count {
+                while stringIndex < self.count {
                     let stringCharacter = self[self.index(self.startIndex, offsetBy: stringIndex)]
                     stringIndex += 1
                     if digitsSet.contains(stringCharacter) {
@@ -85,13 +85,13 @@ public extension String {
                         break
                     }
                 }
-                if stringIndex == self.characters.count {
+                if stringIndex == self.count {
                     return resultString
                 }
             } else {
                 resultString += String(formatCharacter)
             }
-            if formatIndex == format.characters.count {
+            if formatIndex == format.count {
                 return resultString
             }
         }

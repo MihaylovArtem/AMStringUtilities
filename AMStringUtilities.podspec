@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name          = "AMStringUtilities"
   s.version       = "1.1"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   s.ios.deployment_target = '8.0'
   s.summary       = "AMStringUtilities is an extension for String struct in Swift"
   s.description   = "AMStringUtilities is an extension for String struct in Swift, that gives you some advantages for using phone, e-mail and date strings."
